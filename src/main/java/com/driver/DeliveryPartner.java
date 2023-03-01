@@ -2,30 +2,30 @@ package com.driver;
 
 import java.util.List;
 
+
 public class DeliveryPartner {
-    private String partnerId;
-    private List<String> assignedOrderIds;
 
-    public DeliveryPartner(String partnerId, List<String> assignedOrderIds) {
-        this.partnerId = partnerId;
-        this.assignedOrderIds = assignedOrderIds;
+    private String id;
+    private int numberOfOrders;
+
+    public DeliveryPartner(){
+
     }
 
-    // Getters and Setters
-
-    public String getPartnerId() {
-        return partnerId;
+    public DeliveryPartner(String id) {
+        this.id = id;
+        this.numberOfOrders = 0;
     }
 
-    public void setPartnerId(String partnerId) {
-        this.partnerId = partnerId;
+    public String getId() {
+        return id;
     }
 
-    public List<String> getAssignedOrderIds() {
-        return assignedOrderIds;
+    public Integer getNumberOfOrders(){
+        return numberOfOrders;
     }
 
-    public void setAssignedOrderIds(List<String> assignedOrderIds) {
-        this.assignedOrderIds = assignedOrderIds;
+    public void setNumberOfOrders(Integer numberOfOrders) {
+        this.numberOfOrders = numberOfOrders;
     }
 }
